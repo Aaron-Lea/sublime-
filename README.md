@@ -1,6 +1,11 @@
 
-#**Java环境配置**
-##新建runJava.bat文件放入jdk\bin中
+#**Sublime编译环境配置** && **常用插件**
+
+####[环境配置文件](https://github.com/Aaron-Lea/sublime-setting)
+####[常用插件](https://github.com/Aaron-Lea/sublime-setting/tree/master/plugins)
+
+###**Java环境配置**
+####新建runJava.bat文件放入jdk\bin中
 代码如下:
 >@ECHO OFF 
 >cd %~dp1 
@@ -14,8 +19,8 @@
 >java %~n1 
 >)
 
-##sublime->Tools->Build System->new Build System
-###文件名保存为JavaC..sublime-build 
+###sublime->Tools->Build System->new Build System
+####文件名保存为JavaC..sublime-build 
 代码如下：
 >{
 >  "shell_cmd": "runJava.bat \"$file\"",
@@ -24,10 +29,10 @@
 >  "encoding": "UTF-8"
 >}
 
-#**Sublime中CPP环境配置**
-##系统的*g++ $ gcc*配置略
-##sublime->Tools->Build System->new Build System
-###文件名保存为C++.sublime-build
+###**Sublime中CPP环境配置**
+####系统的*g++ $ gcc*配置略
+#####sublime->Tools->Build System->new Build System
+######文件名保存为C++.sublime-build
 代码如下：
 >{
 >    "cmd": ["g++", "${file}", "-o", "${file_path}/${file_base_name}"],
@@ -45,9 +50,9 @@
 >    ]
 >}
 
-#**Sublime中Python环境配置**
-##sublime->Tools->Build System->new Build System
-###文件名保存为 Python.sublime-build 
+###**Sublime中Python环境配置**
+####sublime->Tools->Build System->new Build System
+#####文件名保存为 Python.sublime-build 
 代码如下：
 >{
 >    "cmd": ["python", "-u", "$file"],
@@ -64,9 +69,9 @@
 >    ]
 >}
 
-#**Sublime中Ruby环境配置**
-##sublime->Tools->Build System->new Build System
-###文件名保存为 Ruby.sublime-build 
+###**Sublime中Ruby环境配置**
+####sublime->Tools->Build System->new Build System
+#####文件名保存为 Ruby.sublime-build 
 代码如下：
 >{
 >    "cmd": ["ruby", "$file"],
