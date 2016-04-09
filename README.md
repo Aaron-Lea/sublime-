@@ -2,7 +2,7 @@
 #**Sublime编译环境配置** && **常用插件**
 
 ####[环境配置文件](https://github.com/Aaron-Lea/sublime-setting)
-####[常用插件](https://github.com/Aaron-Lea/sublime-setting/tree/master/plugins)
+####[常用插件](https://github.com/Aaron-Lea/sublime-setting/archive/master.zip)
 
 ###**Java环境配置**
 ####新建runJava.bat文件放入jdk\bin中
